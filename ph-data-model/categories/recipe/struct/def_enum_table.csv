@@ -1,0 +1,2 @@
+table_name,table_schema,display,display_long,comment
+meal,public,Meal,Indicates which meal,__comment__

@@ -1,0 +1,7 @@
+field_name,field_type,field_default,dep_table_category,dep_table_type,dep_table_name,dep_table_field,display,display_long,comment
+ingredient_id,TEXT,,ingredient,static,ingredient,ingredient_id,Ingredient,Ingredient,__comment__
+ingredient_name,TEXT,,__no_dep__,__no_dep__,__no_dep__,__no_dep__,Ingredient Name,,
+ciqual_aliment_code,TEXT,,ext_ciqual,extra,ciqual,alim_code,Ciqual Aliment Code,,
+store_section_id,TEXT,,ingredient,static,store_section,store_section_id,Store Section id,,
+store_section_name,TEXT,,__no_dep__,__no_dep__,__no_dep__,__no_dep__,Store Section Name,,
+comment,TEXT,,__no_dep__,__no_dep__,__no_dep__,__no_dep__,Comment,Comment,__comment__

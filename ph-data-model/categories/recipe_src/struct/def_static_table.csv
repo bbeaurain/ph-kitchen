@@ -1,0 +1,6 @@
+table_name,table_schema,primary_key,unique,display,display_long,comment
+book,public,book_id,,Book,__display_long__,__comment__
+link,public,link_id,,Link,__display_long__,__comment__
+map_recipe_book,public,map_recipe_book_sid,recipe_id|book_id,Map recipe Book,__display_long__,__comment__
+map_recipe_link,public,map_recipe_link_sid,recipe_id|link_id,Map Recipe Link,__display_long__,__comment__
+website,public,website_id,,Website,__display_long__,__comment__

@@ -1,0 +1,14 @@
+store_section_id,store_section_name,comment
+BAKERY,Bread,__comment__
+BUTCHER,Butcher,__comment__
+CAN,Can,__comment__
+WINE,Cave,__comment__
+DELI,Deli,__comment__
+FISHMONGER,Fishmonger,__comment__
+FREEZER,Freezer,__comment__
+FRIDGE,Fridge,__comment__
+FUIT_VEG,Fruits & Veg,__comment__
+LEAVES,Leaves,__comment__
+NA,Not Applicable,__comment__
+NUTS,Nuts,__comment__
+SPICE,Spice,__comment__

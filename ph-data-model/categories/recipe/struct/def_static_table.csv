@@ -1,0 +1,3 @@
+table_name,table_schema,primary_key,unique,display,display_long,comment
+recipe,pubic,recipe_id,,Recipe,Recipe declaration,__comment__
+map_recipe_ingredient,pubic,map_recipe_ingredient_sid,recipe_id|ingredient_id,Map Recipe Ingredient,List down ingredients and quantities for each recipe,__comment__
