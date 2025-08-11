@@ -1,57 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Recipe Picker</title>
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 2rem;
-      background: #fafafa;
-    }
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    select {
-      width: 100%;
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-    #selected {
-      margin-top: 1rem;
-      padding: 1rem;
-      background: white;
-      border: 1px solid #ddd;
-    }
+    body { font-family: sans-serif; padding: 20px; }
+    select { width: 300px; height: 150px; }
+    .selected { margin-top: 20px; }
   </style>
 </head>
 <body>
-  <h1>Select Recipes</h1>
-
-  <select id="recipePicker" multiple size="6">
-    <option value="AUBERGINES_A_LA_PARMESANE">Aubergines à la Parmesane</option>
-    <option value="LASAGNES_EPINARDS_ET_CHEVRE">Lasagnes Épinards & Chèvre</option>
-    <option value="CURRY_DE_LENTILLES">Curry de Lentilles</option>
-    <option value="BOEUF_BOURGUIGNON">Boeuf Bourguignon</option>
-    <option value="QUICHE_LORRAINE">Quiche Lorraine</option>
-    <option value="SALADE_NICOISE">Salade Niçoise</option>
-  </select>
-
-  <div id="selected"><strong>Selected recipes:</strong> None</div>
-
+  <h1>Recipe Picker</h1>
+  
+  <label for="recipes">Select Recipes:</label><br>
+  <select id="recipes" multiple></select>
+  
+  <div class="selected">
+    <h2>Selected Recipes</h2>
+    <ul id="selectedList"></ul>
+  </div>
+  
   <script>
-    const picker = document.getElementById('recipePicker');
-    const selectedDiv = document.getElementById('selected');
+    const endpoint = "http://localhost:8080/v1/graphql";
+    const query = `
+        query MyQuery {
+        recipe {
+            recipe_name
+        }
+        }
+    `;
 
-    picker.addEventListener('change', () => {
-      const selectedOptions = Array.from(picker.selectedOptions).map(opt => opt.text);
-      selectedDiv.innerHTML = `<strong>Selected recipes:</strong> ${selectedOptions.length ? selectedOptions.join(', ') : 'None'}`;
-      
-      // Later: Here is where we’ll build the GraphQL query using selectedOptions
-      console.log("Selected IDs:", Array.from(picker.selectedOptions).map(opt => opt.value));
-    });
+    // Fetch recipes from GraphQL
+    async function fetchRecipes() {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query })
+      });
+
+      const json = await res.json();
+      return json.data.recipes;
+    }
+
+    // Populate picker
+    function populatePicker(recipes) {
+      const select = document.getElementById("recipes");
+      recipes.forEach(recipe => {
+        const option = document.createElement("option");
+        option.value = recipe.id;
+        option.textContent = recipe.name;
+        select.appendChild(option);
+      });
+
+      select.addEventListener("change", () => {
+        const selected = Array.from(select.selectedOptions).map(opt => opt.textContent);
+        displaySelected(selected);
+      });
+    }
+
+    // Display selected recipes
+    function displaySelected(selected) {
+      const list = document.getElementById("selectedList");
+      list.innerHTML = "";
+      selected.forEach(name => {
+        const li = document.createElement("li");
+        li.textContent = name;
+        list.appendChild(li);
+      });
+    }
+
+    // Init
+    fetchRecipes().then(populatePicker);
   </script>
 </body>
 </html>
