@@ -1,0 +1,14 @@
+query grocery_list($recipe_ids: [String!]) {
+  map_recipe_ingredient(where: {recipe_id: {_in: $recipe_ids}}) {
+    ingredient_id
+    ingredient_qty
+    unit_id
+    ingredient_by_ingredient_id {
+      store_section_id
+    }
+    recipe_id
+    unit_by_unit_id {
+      display
+    }
+  }
+}

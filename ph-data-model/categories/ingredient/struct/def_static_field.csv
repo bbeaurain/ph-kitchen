@@ -1,8 +1,0 @@
-table_name,field_category,field_name
-ingredient,ingredient,ingredient_id
-ingredient,ingredient,ingredient_name
-ingredient,ingredient,store_section_id
-ingredient,ingredient,ciqual_aliment_code
-store_section,ingredient,store_section_id
-store_section,ingredient,store_section_name
-store_section,ingredient,comment

@@ -1,3 +1,0 @@
-table_name,table_schema,primary_key,unique,display,display_long,comment
-ingredient,public,ingredient_id,,Ingredient,Ingredients,__comment__
-store_section,public,store_section_id,,Store Section,Store sections in which ingredients will be found,__comment__

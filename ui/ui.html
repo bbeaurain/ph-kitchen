@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Picker</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background: #fafafa;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    #selected {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: white;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select Recipes</h1>
+
+  <select id="recipePicker" multiple size="6">
+    <option value="AUBERGINES_A_LA_PARMESANE">Aubergines à la Parmesane</option>
+    <option value="LASAGNES_EPINARDS_ET_CHEVRE">Lasagnes Épinards & Chèvre</option>
+    <option value="CURRY_DE_LENTILLES">Curry de Lentilles</option>
+    <option value="BOEUF_BOURGUIGNON">Boeuf Bourguignon</option>
+    <option value="QUICHE_LORRAINE">Quiche Lorraine</option>
+    <option value="SALADE_NICOISE">Salade Niçoise</option>
+  </select>
+
+  <div id="selected"><strong>Selected recipes:</strong> None</div>
+
+  <script>
+    const picker = document.getElementById('recipePicker');
+    const selectedDiv = document.getElementById('selected');
+
+    picker.addEventListener('change', () => {
+      const selectedOptions = Array.from(picker.selectedOptions).map(opt => opt.text);
+      selectedDiv.innerHTML = `<strong>Selected recipes:</strong> ${selectedOptions.length ? selectedOptions.join(', ') : 'None'}`;
+      
+      // Later: Here is where we’ll build the GraphQL query using selectedOptions
+      console.log("Selected IDs:", Array.from(picker.selectedOptions).map(opt => opt.value));
+    });
+  </script>
+</body>
+</html>

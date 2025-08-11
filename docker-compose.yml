@@ -1,0 +1,28 @@
+version: '3.6'
+services:
+  postgres:
+    image: postgres:14  # ARM-compatible
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Nathy202102!
+      POSTGRES_USER: ph_kitchen
+      POSTGRES_DB: kitchendb
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  hasura:
+    image: hasura/graphql-engine:v2.39.0  # ARM-compatible
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgres://ph_kitchen:Nathy202102!@postgres:5432/kitchendb
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true"
+      HASURA_GRAPHQL_DEV_MODE: "true"
+
+volumes:
+  pgdata:

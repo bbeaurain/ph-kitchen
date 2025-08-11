@@ -1,0 +1,354 @@
+{
+  "data": {
+    "map_recipe_ingredient": [
+      {
+        "ingredient_id": "PARMIGIANO",
+        "ingredient_qty": "150",
+        "unit_id": "g__PARMIGIANO",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FRIDGE"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "CHOPPED_TOMATOES",
+        "ingredient_qty": "700",
+        "unit_id": "g__CHOPPED_TOMATOES",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "CAN"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "MOZZARELLA",
+        "ingredient_qty": "250",
+        "unit_id": "g__MOZZARELLA",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FRIDGE"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "BASIL",
+        "ingredient_qty": "10",
+        "unit_id": "leaves__BASIL",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "LEAVES"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "leaves"
+        }
+      },
+      {
+        "ingredient_id": "AUBERGINES",
+        "ingredient_qty": "2",
+        "unit_id": "medium__AUBERGINES",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "medium"
+        }
+      },
+      {
+        "ingredient_id": "SHALLOTS",
+        "ingredient_qty": "1",
+        "unit_id": "medium__SHALLOTS",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "medium"
+        }
+      },
+      {
+        "ingredient_id": "GARLIC_GLOVE",
+        "ingredient_qty": "1",
+        "unit_id": "medium__GARLIC_GLOVE",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "medium"
+        }
+      },
+      {
+        "ingredient_id": "ORIGANO",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__ORIGANO",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "SPICE"
+        },
+        "recipe_id": "AUBERGINES_A_LA_PARMESANE",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "CR\u00c8ME_FRAICHE",
+        "ingredient_qty": "500",
+        "unit_id": "g__CR\u00c8ME_FRAICHE",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FRIDGE"
+        },
+        "recipe_id": "GRATIN_DAUPHINOIS",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "POTATO",
+        "ingredient_qty": "1.2",
+        "unit_id": "kg__POTATO",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "GRATIN_DAUPHINOIS",
+        "unit_by_unit_id": {
+          "display": "kg"
+        }
+      },
+      {
+        "ingredient_id": "GARLIC_GLOVE",
+        "ingredient_qty": "1",
+        "unit_id": "medium__GARLIC_GLOVE",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "GRATIN_DAUPHINOIS",
+        "unit_by_unit_id": {
+          "display": "medium"
+        }
+      },
+      {
+        "ingredient_id": "SALT",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__SALT",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "SPICE"
+        },
+        "recipe_id": "GRATIN_DAUPHINOIS",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "PEPPER_GROUND",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__PEPPER_GROUND",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "SPICE"
+        },
+        "recipe_id": "GRATIN_DAUPHINOIS",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "NUTMEG_GROUND",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__NUTMEG_GROUND",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "SPICE"
+        },
+        "recipe_id": "GRATIN_DAUPHINOIS",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "SPINACH",
+        "ingredient_qty": "600",
+        "unit_id": "g__SPINACH",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "MUSHROOM",
+        "ingredient_qty": "200",
+        "unit_id": "g__MUSHROOM",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "WHOLE_MILK",
+        "ingredient_qty": "250",
+        "unit_id": "g__WHOLE_MILK",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FRIDGE"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "BUTTER",
+        "ingredient_qty": "40",
+        "unit_id": "g__BUTTER",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FRIDGE"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "PLAIN_FLOUR",
+        "ingredient_qty": "60",
+        "unit_id": "g__PLAIN_FLOUR",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "DELI"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "CHOPPED_TOMATOES",
+        "ingredient_qty": "500",
+        "unit_id": "g__CHOPPED_TOMATOES",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "CAN"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "GOAT_CHEESE",
+        "ingredient_qty": "200",
+        "unit_id": "g__GOAT_CHEESE",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FRIDGE"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "MOZZARELLA",
+        "ingredient_qty": "100",
+        "unit_id": "g__MOZZARELLA",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FRIDGE"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "g"
+        }
+      },
+      {
+        "ingredient_id": "TOMATO",
+        "ingredient_qty": "4",
+        "unit_id": "medium__TOMATO",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "FUIT_VEG"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "medium"
+        }
+      },
+      {
+        "ingredient_id": "LASAGNA",
+        "ingredient_qty": "12",
+        "unit_id": "sheet__LASAGNA",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "DELI"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "sheet"
+        }
+      },
+      {
+        "ingredient_id": "NUTMEG_GROUND",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__NUTMEG_GROUND",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "SPICE"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "PEPPER_GROUND",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__PEPPER_GROUND",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "SPICE"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "SUGAR",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__SUGAR",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "DELI"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "ORIGANO",
+        "ingredient_qty": "1",
+        "unit_id": "tsp__ORIGANO",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "SPICE"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "tsp"
+        }
+      },
+      {
+        "ingredient_id": "CHICKEN_STOCK",
+        "ingredient_qty": "1",
+        "unit_id": "unit__CHICKEN_STOCK",
+        "ingredient_by_ingredient_id": {
+          "store_section_id": "DELI"
+        },
+        "recipe_id": "LASAGNES_EPINARDS_ET_CHEVRE",
+        "unit_by_unit_id": {
+          "display": "unit"
+        }
+      }
+    ]
+  }
+}
